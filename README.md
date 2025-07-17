@@ -6,7 +6,7 @@ This site showcases my work in Full Stack Development and AI projects, merging t
 
 ## 🔗 Live Site
 
-[Visit my portfolio](https://your-username.github.io/your-repo-name)
+[Visit my portfolio](https://mpholorriey25.github.io/my_ai_portfolio/)
 
 ## 🧩 Featured Projects
 
