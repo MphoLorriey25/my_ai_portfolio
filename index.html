@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mpho Lorraine Ndou - Portfolio</title>
+
+  <!-- Google Fonts: Poppins and Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet" />
+
+  <style>
+    /* Custom fonts */
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0f172a; /* navy */
+      color: #e0e7ff;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image:
+        radial-gradient(circle at 30% 30%, #14b8a6, transparent 50%),
+        radial-gradient(circle at 70% 70%, #fb7185, transparent 50%);
+      background-repeat: no-repeat;
+      background-size: 60% 60%;
+      background-position: center;
+      transition: background 1s ease;
+    }
+
+    main {
+      background: rgba(15, 23, 42, 0.85);
+      border-radius: 1.5rem;
+      padding: 2.5rem 3rem;
+      max-width: 900px;
+      width: 100%;
+      box-shadow: 0 0 40px rgba(20, 184, 166, 0.7);
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 900;
+      font-size: 3rem;
+      margin-bottom: 0.4rem;
+      color: #14b8a6; /* teal */
+      text-shadow: 0 0 12px #14b8a6aa;
+      letter-spacing: 0.05em;
+    }
+
+    p.intro {
+      font-size: 1.15rem;
+      margin-bottom: 2.5rem;
+      color: #cbd5e1;
+      line-height: 1.6;
+      font-weight: 500;
+    }
+
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid #fb7185; /* coral border */
+      box-shadow: 0 15px 40px #fb7185cc;
+      object-fit: cover;
+      margin: 0 auto 1.5rem;
+      transition: transform 0.6s ease, box-shadow 0.6s ease;
+      display: block;
+      cursor: pointer;
+    }
+    .profile-img:hover {
+      transform: scale(1.12) rotate(5deg);
+      box-shadow: 0 25px 60px #fb7185ff;
+    }
+
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 2.1rem;
+      margin-bottom: 1.5rem;
+      color: #f87171; /* lighter coral */
+      border-bottom: 2px solid #14b8a6;
+      padding-bottom: 0.3rem;
+    }
+
+    .skills-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      max-width: 700px;
+      margin: 0 auto 3rem;
+    }
+    .skill-badge {
+      padding: 0.5rem 1.3rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      font-size: 1rem;
+      box-shadow: 0 5px 15px rgba(251, 113, 133, 0.6);
+      user-select: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+    }
+    .skill-badge:hover {
+      transform: scale(1.15);
+      box-shadow: 0 10px 30px rgba(251, 113, 133, 0.9);
+    }
+    .tech {
+      background: linear-gradient(135deg, #14b8a6, #0f766e);
+      color: #d1fae5;
+      text-shadow: 0 1px 3px #064e3b;
+    }
+    .soft {
+      background: linear-gradient(135deg, #f87171, #b91c1c);
+      color: #fee2e2;
+      text-shadow: 0 1px 3px #7f1d1d;
+    }
+    .learning {
+      background: linear-gradient(135deg, #fbbf24, #b45309);
+      color: #78350f;
+      font-style: italic;
+      text-shadow: 0 1px 3px #78350f;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 2.2rem;
+      margin-bottom: 3rem;
+    }
+
+    .project-card {
+      background: #1e293b;
+      border-radius: 1rem;
+      padding: 1.7rem 2rem;
+      box-shadow: 0 8px 30px rgba(20, 184, 166, 0.4);
+      color: #cbd5e1;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 18px 50px #fb7185cc;
+    }
+
+    .project-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 0.6rem;
+      color: #14b8a6;
+      text-shadow: 0 0 8px #14b8a6aa;
+    }
+    .project-desc {
+      flex-grow: 1;
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+    .project-links a {
+      color: #fb7185;
+      font-weight: 600;
+      margin-right: 1.3rem;
+      text-decoration: underline;
+      transition: color 0.3s ease;
+    }
+    .project-links a:hover {
+      color: #14b8a6;
+    }
+
+    .btn-resume {
+      background: linear-gradient(135deg, #fb7185, #f43f5e);
+      color: white;
+      font-weight: 700;
+      font-size: 1.15rem;
+      padding: 0.85rem 3.2rem;
+      border-radius: 9999px;
+      box-shadow: 0 8px 30px #fb7185cc;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 auto;
+      transition: all 0.4s ease;
+    }
+    .btn-resume:hover {
+      background: linear-gradient(135deg, #14b8a6, #0d9488);
+      box-shadow: 0 14px 45px #14b8a6cc;
+      transform: scale(1.1);
+      color: #d1fae5;
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 1.05rem;
+      color: #94a3b8;
+      user-select: none;
+    }
+    .social-links {
+      margin-top: 0.8rem;
+      display: inline-flex;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .social-links a {
+      color: #94a3b8;
+      font-weight: 700;
+      font-size: 1.7rem;
+      transition: transform 0.35s ease, color 0.35s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px;
+      border-radius: 50%;
+      user-select: none;
+    }
+    .social-links a:hover {
+      color: #fb7185;
+      transform: scale(1.3) rotate(10deg);
+      text-shadow: 0 0 8px #fb7185cc;
+    }
+
+    @keyframes bounce {
+      0%, 100% {transform: translateY(0);}
+      50% {transform: translateY(-6px);}
+    }
+    .social-links a:hover {
+      animation: bounce 0.5s ease infinite;
+    }
+  </style>
+
+  <!-- Font Awesome CDN (no login required) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  integrity="sha512-p1Cm49KmsDdGPZJZkYr9M7EHLlA7AEMaxXq0N6eSwhxSnLL2x4nTwX4zTRXgo86htCkKqqlu/ljRC4I1VRsvUg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+<body>
+  <main>
+
+    <img src="assets/me.jpg" alt="Mpho Lorraine Ndou" class="profile-img" />
+
+    <h1>Mpho Lorraine Ndou</h1>
+
+    <p class="intro">
+      Passionate Full Stack Developer and Law Student, specializing in modern web technologies, AI integrations, and data visualization. Enthusiastically merging legal expertise with cutting-edge AI to create innovative, impactful digital solutions. Always eager to learn, grow, and drive meaningful change at the intersection of technology and law.
+    </p>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <span class="skill-badge tech">JavaScript</span>
+        <span class="skill-badge tech">GitHub</span>
+        <span class="skill-badge tech">Render</span>
+        <span class="skill-badge tech">Vercel</span>
+        <span class="skill-badge tech">Streamlit</span>
+        <span class="skill-badge tech">API Integration</span>
+        <span class="skill-badge tech">CSS</span>
+        <span class="skill-badge tech">Html</span>
+        <span class="skill-badge tech">React</span>
+        <span class="skill-badge tech">Node.js</span>
+        <span class="skill-badge tech">Tailwind CSS</span>
+        <span class="skill-badge tech">Python <em>(learning)</em></span>
+        <span class="skill-badge soft">Communication</span>
+        <span class="skill-badge soft">Teamwork</span>
+        <span class="skill-badge soft">Problem Solving</span>
+        <span class="skill-badge soft">Adaptability</span>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+<section class="bg-white py-10 px-6" id="certifications">
+  <h2 class="text-3xl font-bold text-center text-purple-700 mb-6">Certifications</h2>
+  <div class="flex flex-col items-center space-y-4">
+    <a href="https://coursera.org/share/19d8af4901b3a31e8f0b3df9c431358c" target="_blank" class="shadow-lg p-4 rounded-md border border-purple-300 hover:bg-purple-50 transition">
+      <img src="https://img.shields.io/badge/Coursera-AI%20For%20Everyone-blue?logo=coursera&style=for-the-badge" alt="Coursera Badge">
+    </a>
+    <p class="text-sm text-gray-700 text-center">Completed the <strong>AI For Everyone</strong> course by Andrew Ng on Coursera</p>
+  </div>
+</section>
+
+
+
+
+
+    <section>
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <article class="project-card" tabindex="0" aria-label="AI Quiz Ultimate Project">
+      <h3 class="project-title">🧠 AI Quiz Ultimate</h3>
+      <p class="project-desc">An interactive AI-powered quiz app that adapts questions dynamically based on user progress, featuring rich UX and analytics.</p>
+      <div class="project-links">
+        <a href="https://github.com/MphoLorriey25/ai-quiz-ultimate" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://mpholorriey25.github.io/ai-quiz-ultimate/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+      </div>
+    </article>
+
+    <article class="project-card" tabindex="0" aria-label="Cohere Chatbot Project">
+      <h3 class="project-title">🤖 Cohere Chatbot</h3>
+      <p class="project-desc">A responsive AI chatbot using Cohere API, built for seamless conversation and context-aware replies.</p>
+      <div class="project-links">
+        <a href="https://github.com/MphoLorriey25/cohere-chatbot" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://cohere-chatbot-t4mr.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+      </div>
+    </article>
+
+    <article class="project-card" tabindex="0" aria-label="Sentiment Dashboard Project">
+      <h3 class="project-title">📊 Sentiment Dashboard</h3>
+      <p class="project-desc">Real-time sentiment analysis dashboard with intuitive UI and live data integration.</p>
+      <div class="project-links">
+        <a href="https://github.com/MphoLorriey25/sentiment-dashboard" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://sentiment-dashboard-jmzufaa88feuna8v6ujtx4.streamlit.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+      </div>
+    </article>
+
+    <article class="project-card" tabindex="0" aria-label="LearnMate AI Project">
+      <h3 class="project-title">🎓 LearnMate.ai</h3>
+      <p class="project-desc">An AI learning platform with personalized recommendations and progress tracking.</p>
+      <div class="project-links">
+        <a href="https://github.com/MphoLorriey25/learnmate.ai" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://learnmate-ai-1.onrender.com/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+    <a href="Mpho-Lorraine-Ndou-Resume.pdf" class="btn-resume" download>Download Resume</a>
+
+    <footer class="mt-16 text-center">
+  <div class="max-w-xs mx-auto bg-slate-800 p-8 rounded-2xl shadow-xl space-y-4">
+    <h2 class="text-2xl font-bold text-white mb-6">Connect With Me</h2>
+
+    <a href="https://www.linkedin.com/in/mpholorraine" target="_blank" class="flex items-center justify-center gap-3 px-6 py-3 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition">
+      <i class="fab fa-linkedin-in text-xl"></i>
+      LinkedIn
+    </a>
+
+    <a href="https://github.com/MphoLorriey25" target="_blank" class="flex items-center justify-center gap-3 px-6 py-3 rounded-lg bg-gray-700 text-white font-semibold hover:bg-gray-600 transition">
+      <i class="fab fa-github text-xl"></i>
+      GitHub
+    </a>
+
+    <a href="mailto:lorrieym@gmail.com" class="flex items-center justify-center gap-3 px-6 py-3 rounded-lg bg-purple-600 text-white font-semibold hover:bg-purple-700 transition">
+      <i class="fas fa-envelope text-xl"></i>
+      lorrieym@gmail.com
+    </a>
+
+    <a href="tel:0763553963" class="flex items-center justify-center gap-3 px-6 py-3 rounded-lg bg-purple-500 text-white font-semibold hover:bg-purple-600 transition">
+      <i class="fas fa-phone-alt text-xl"></i>
+      076 355 3963
+    </a>
+
+    <p class="mt-6 text-sm text-slate-400">© 2025 Mpho Lorraine Ndou</p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+  </main>
+</body>
+</html>
