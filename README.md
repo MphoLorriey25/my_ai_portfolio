@@ -2,11 +2,11 @@
 
 Welcome to my personal developer portfolio! 🚀
 
-This site showcases my work in Full Stack Development and AI projects, merging technology with my background in Law. Built with HTML, Tailwind CSS, and hosted on GitHub Pages.
+This site showcases my work in Full Stack Development and AI projects, merging technology with my background in Law. Built with HTML, Tailwind CSS, and hosted on **Vercel**.
 
 ## 🔗 Live Site
 
-[Visit my portfolio](https://mpholorriey25.github.io/my_ai_portfolio/)
+[Visit my portfolio](https://my-ai-portfolio-eta.vercel.app/)
 
 ## 🧩 Featured Projects
 
@@ -31,4 +31,5 @@ I’m a Full Stack Developer and Law Student passionate about AI, legal tech, an
 - Email: lorrieym@gmail.com  
 - LinkedIn: [Mpho Lorraine Ndou](https://www.linkedin.com/in/mpho-lorraine-ndou-64bbba199/)
 - GitHub: [@MphoLorriey25](https://github.com/MphoLorriey25)
+
 # my_ai_portfolio
