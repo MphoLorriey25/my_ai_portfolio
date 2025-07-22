@@ -6,7 +6,7 @@ This site showcases my work in Full Stack Development and AI projects, merging t
 
 ## 🔗 Live Site
 
-[Visit my portfolio](https://my-ai-portfolio-eta.vercel.app/)
+[Visit my portfolio](https://my-ai-portfolio-3fs3.vercel.app/)
 
 ## 🧩 Featured Projects
 
