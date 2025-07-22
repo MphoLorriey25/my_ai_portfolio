@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
+  <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <meta charset="UTF-8" />
@@ -277,21 +280,61 @@
         <span class="skill-badge soft">Problem Solving</span>
         <span class="skill-badge soft">Adaptability</span>
       </div>
-    </section>
+    <section id="certifications" class="my-16 mx-auto max-w-3xl bg-white bg-opacity-90 p-10 rounded-2xl shadow-2xl backdrop-blur-md transition duration-500 ease-in-out transform hover:scale-[1.01]">
+  <h2 class="text-3xl font-bold text-center text-purple-700 mb-10 drop-shadow-md">Certifications</h2>
+  
+  <div class="flex flex-col items-center space-y-6">
 
-    <!-- CERTIFICATIONS SECTION -->
-<section class="bg-white py-10 px-6" id="certifications">
-  <h2 class="text-3xl font-bold text-center text-purple-700 mb-6">Certifications</h2>
-  <div class="flex flex-col items-center space-y-4">
-    <a href="https://coursera.org/share/19d8af4901b3a31e8f0b3df9c431358c" target="_blank" class="shadow-lg p-4 rounded-md border border-purple-300 hover:bg-purple-50 transition">
-      <img src="https://img.shields.io/badge/Coursera-AI%20For%20Everyone-blue?logo=coursera&style=for-the-badge" alt="Coursera Badge">
-    </a>
-    <p class="text-sm text-gray-700 text-center">Completed the <strong>AI For Everyone</strong> course by Andrew Ng on Coursera</p>
+    <!-- AI For Everyone -->
+    <div class="text-center">
+      <a href="https://coursera.org/share/19d8af4901b3a31e8f0b3df9c431358c" target="_blank" class="inline-block shadow-md p-3 rounded-md border border-purple-300 hover:bg-purple-100 transition">
+        <img src="https://img.shields.io/badge/Coursera-AI%20For%20Everyone-blue?logo=coursera&style=for-the-badge" alt="Coursera Badge">
+      </a>
+      <p class="text-sm text-gray-700 mt-2">Completed <strong>AI For Everyone</strong> by Andrew Ng on Coursera</p>
+    </div>
+
+    <!-- Cybersecurity -->
+    <div class="text-center">
+      <a href="https://coursera.org/share/060b670661bb4aa0beb55cb8134d07d9" target="_blank" class="inline-block shadow-md p-3 rounded-md border border-purple-300 hover:bg-purple-100 transition">
+        <img src="https://img.shields.io/badge/Coursera-Cybersecurity%20Tools%20%26%20Attacks-blue?logo=coursera&style=for-the-badge" alt="Coursera Badge">
+      </a>
+      <p class="text-sm text-gray-700 mt-2">Completed <strong>Intro to Cybersecurity Tools & Cyber Attacks</strong> by IBM on Coursera</p>
+    </div>
+
+    <!-- Data Science -->
+    <div class="text-center">
+      <a href="https://coursera.org/share/c0c42625e8d928cac8097673118f98f3" target="_blank" class="inline-block shadow-md p-3 rounded-md border border-purple-300 hover:bg-purple-100 transition">
+        <img src="https://img.shields.io/badge/Coursera-Intro%20to%20Data%20Science-blue?logo=coursera&style=for-the-badge" alt="Coursera Badge">
+      </a>
+      <p class="text-sm text-gray-700 mt-2">Completed <strong>What is Data Science?</strong> by IBM on Coursera</p>
+    </div>
+
+    <!-- Intro to AI -->
+    <div class="text-center">
+      <a href="https://coursera.org/share/99373e98461bed021c5aad1e3cb5ed35" target="_blank" class="inline-block shadow-md p-3 rounded-md border border-purple-300 hover:bg-purple-100 transition">
+        <img src="https://img.shields.io/badge/Coursera-Intro%20to%20AI-blue?logo=coursera&style=for-the-badge" alt="Coursera Badge">
+      </a>
+      <p class="text-sm text-gray-700 mt-2">Completed <strong>Intro to Artificial Intelligence (AI)</strong> by IBM on Coursera</p>
+    </div>
+
+    <!-- Python for Data Science -->
+    <div class="text-center">
+      <a href="https://coursera.org/share/5fcb01af578b68885b78e8bd075aa87b" target="_blank" class="inline-block shadow-md p-3 rounded-md border border-purple-300 hover:bg-purple-100 transition">
+        <img src="https://img.shields.io/badge/Coursera-Python%20for%20Data%20Science-blue?logo=coursera&style=for-the-badge" alt="Coursera Badge">
+      </a>
+      <p class="text-sm text-gray-700 mt-2">Completed <strong>Python for Data Science, AI & Development</strong> by IBM on Coursera</p>
+    </div>
+
+    <!-- Credly Badge -->
+    <div class="text-center">
+      <a href="https://www.credly.com/badges/8f173a2a-55c7-47a5-af93-62a61723f789/public_url" target="_blank" class="inline-block shadow-md p-3 rounded-md border border-purple-300 hover:bg-purple-100 transition">
+        <img src="https://img.shields.io/badge/Credly-Cybersecurity%20Analyst-blueviolet?logo=ibm&style=for-the-badge" alt="Credly Badge">
+      </a>
+      <p class="text-sm text-gray-700 mt-2">Earned the <strong>IBM Cybersecurity Analyst</strong> badge on Credly</p>
+    </div>
+
   </div>
 </section>
-
-
-
 
 
     <section>
@@ -375,5 +418,14 @@
 
 
   </main>
+  <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration in ms
+    once: true,     // animation happens only once
+  });
+</script>
+
 </body>
 </html>
