@@ -32,4 +32,3 @@ I’m a Full Stack Developer and Law Student passionate about AI, legal tech, an
 - LinkedIn: [Mpho Lorraine Ndou](https://www.linkedin.com/in/mpho-lorraine-ndou-64bbba199/)
 - GitHub: [@MphoLorriey25](https://github.com/MphoLorriey25)
 
-# my_ai_portfolio
